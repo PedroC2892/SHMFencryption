@@ -31,3 +31,5 @@ cd .. && rm -rf SHMFencryption
 ```bash
 sudo rm /usr/local/bin/shmfe
 ```
+## LICENSE
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
