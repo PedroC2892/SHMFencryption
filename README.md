@@ -5,6 +5,8 @@ git clone https://github.com/JoelInf2430/SHMFencryption.git
 cd SHMFencryption
 make 
 sudo make install
+cd .. && rm -rf SHMFencryption
+
 ```
 ## Usage: shmfe [OPTION]...
 ```bash
