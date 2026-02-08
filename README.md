@@ -1,4 +1,9 @@
 # Small Home Made File Encryption
+## Description
+Lightweight compression and encryption tool for files and directories.
+
+Folder are archived and compressed using tar.gz, the are encrypted by libsodium with XChaCha20-Poly1305
+
 ## Installation 
 ```bash
 git clone https://github.com/JoelInf2430/SHMFencryption.git
