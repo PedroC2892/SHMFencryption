@@ -1,0 +1,14 @@
+package "SmallHMFencryption"
+version "1.0.0"
+purpose "A defensive security tool for file encryption."
+
+option "input"     i "Path to the input file" string required
+option "output"    o "Path to the output file" string optional
+
+option "encrypt"      e "Enable encryption mode" flag off
+option "decrypt"      d "Enable decryption mode" flag off
+option "remove_input" r "Remove original input file/folder after successful operation" flag off
+
+text "Pro tip:\n"
+text "  Encrypt and Compress from path   :   cryptotool -ei <PATH>\n"
+text "  Decrypt and Decompress from path :   cryptotool -di <PATH>"

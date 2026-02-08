@@ -1,0 +1,10 @@
+*.o
+*.a
+*.so
+*.out
+*.enc
+*.decn
+*.tar.gz
+.DS_Store
+SHMFencryption
+cryptotool
