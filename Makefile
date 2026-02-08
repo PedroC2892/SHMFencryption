@@ -4,7 +4,7 @@ LIBS = -lsodium
 
 SRC_DIR = src
 CONFIG_DIR = config
-BIN = SHMFencryption
+BIN = shmfe
 
 OBJS = $(SRC_DIR)/main.o $(SRC_DIR)/crypto.o $(SRC_DIR)/cmdline.o
 
