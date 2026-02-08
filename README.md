@@ -5,6 +5,17 @@ Lightweight compression and encryption tool for files and directories.
 Folder are archived and compressed using tar.gz, the are encrypted by libsodium with XChaCha20-Poly1305
 
 ## Installation 
+
+### Dependencies
+Arch: 
+```bash
+sudo pacman -S base-devel libsodium gengetopt
+```
+Debian:
+```bash
+sudo apt install build-essential libsodium-dev gengetopt
+```
+Install:
 ```bash
 git clone https://github.com/JoelInf2430/SHMFencryption.git
 cd SHMFencryption
