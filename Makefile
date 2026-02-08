@@ -8,7 +8,11 @@ BIN = shmfe
 
 OBJS = $(SRC_DIR)/main.o $(SRC_DIR)/crypto.o $(SRC_DIR)/cmdline.o
 
-.PHONY: all clean
+PREFIX ?= /usr/local
+BINDIR ?= $(PREFIX)/bin
+COMMAND_NAME = shmfe
+
+.PHONY: all clean install uninstall
 
 all: $(BIN)
 
@@ -29,3 +33,13 @@ $(SRC_DIR)/crypto.o: $(SRC_DIR)/cmdline.h
 clean:
 	@echo "Cleaning up..."
 	rm -f $(SRC_DIR)/*.o $(BIN) $(SRC_DIR)/cmdline.c $(SRC_DIR)/cmdline.h
+
+install: $(BIN)
+	@echo "Installing $(COMMAND_NAME) to $(BINDIR)..."
+	install -d $(BINDIR)
+	install -m 755 $(BIN) $(BINDIR)/$(COMMAND_NAME)
+	@echo "Success! Run '$(COMMAND_NAME)' from any terminal."
+
+uninstall:
+	@echo "Removing $(COMMAND_NAME)..."
+	rm -f $(BINDIR)/$(COMMAND_NAME)
